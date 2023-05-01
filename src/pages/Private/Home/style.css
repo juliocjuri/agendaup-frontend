@@ -1,0 +1,92 @@
+.container{
+     flex-direction: row;
+     display: flex;
+}
+
+.page-wrapper{
+     display: flex;
+     flex-direction: column;
+     flex: 1;
+     animation: fade 1s linear forwards
+}
+
+.header-user-wrapper{
+     display: flex;
+     margin: 0 auto;
+     flex-direction: column;
+     margin-top: 50px;
+}
+
+.header-user-title{
+     font-size: 2rem;
+     font-weight: bold;
+     margin: 0 auto;
+}
+
+.header-user-subtitle{
+     margin: 0 auto;
+     margin-top: 10px;
+}
+
+.completed-schedules-wrapper{
+     display: flex;
+     margin: 0 auto;
+     margin-top: 40px;
+     background-color: rgb(239, 239, 239);
+     padding: 1%;
+     border-radius: 10px;
+     flex-direction: column;
+     width: fit-content;
+}
+
+
+.completed-schedules-wrapper li{
+     font-size: 0.8rem;
+     margin-top: 5px;
+}
+
+.completed-schedules-wrapper li::before{
+     content: 	'• ';
+}
+
+
+.week-schedules{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     margin-bottom: 50px;
+     margin-top: 40px;
+}
+
+
+.week-schedule-list{
+     margin-left: 20px;
+}
+
+.main-title{
+     font-weight: bold;
+}
+
+.week-schedule-item{
+     background-color: rgb(239, 239, 239);
+     border-radius: 10px;
+     margin-top: 10px;
+     font-size: .7rem;
+     padding-right: 10px;
+     transition: all 0.5s;
+}
+
+.week-schedule-item:hover{
+     background-color: rgb(220, 220, 220);
+     cursor: pointer;
+     transition: all 0.5s;
+}
+
+@keyframes fade {
+     0%{
+          opacity: 0;
+     }
+     100%{
+          opacity: 1;
+     }
+}

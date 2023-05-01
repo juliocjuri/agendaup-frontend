@@ -1,0 +1,137 @@
+.container{
+     display: flex;
+     flex-direction: column;
+}
+
+.modal{
+     height: fit-content;
+     width: fit-content;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 10%;
+     margin-bottom: auto;
+     display: flex;
+     background-color: white;
+     border-radius: 10px;
+     border: 1px black solid;
+     padding: 2%;
+}
+
+.modal-wrapper{
+     margin-top: auto;
+     margin-bottom: auto;
+     display: flex;
+     flex-direction: column;
+}
+
+.modal-btn{
+     margin-left: auto;
+     margin-right: auto;
+     background-color: white;
+     border: 1px black solid;
+     border-radius: 10px;
+     cursor: pointer;
+}
+
+.create-schedule-header{
+     margin-left: auto;
+     margin-right: auto;
+     display: flex;
+     font-size: 2rem;
+     font-weight: bold;
+     margin-top: 20vh;
+     animation: fade 1s linear forwards
+}
+
+.create-schedule-wrapper{
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 5%;
+     width: 50%;
+     animation: fade 1s linear forwards;
+     display: flex;
+     flex-direction: column;
+}
+
+label{
+     margin-top: 20px;
+}
+
+.invite-wrapper{
+     display: flex;
+     flex-direction: row;
+     margin-top: 20px;
+}
+
+.invite-wrapper-inner{
+     display: flex;
+     flex-direction: column;
+}
+
+.invited-email-wrapper{
+     display: flex;
+     flex-direction: row;
+     margin-top: 10px;
+}
+
+.invited-email-element{
+     background-color: rgb(223, 223, 223);
+     border-radius: 10px;
+     padding: 2%;
+     font-size: 0.8rem;
+     margin-top: 10px;
+     width: fit-content;
+}
+
+.invited-email-remove-btn{
+     margin-left: auto;
+     border: 1px rgb(198, 198, 198) solid;
+     border-radius: 7px;
+     cursor: pointer;
+     margin-bottom: auto;
+     margin-top: auto;
+     font-size: 0.7rem;
+     padding: 1.2%;
+     background-color: rgb(248, 106, 106);
+     color: white;
+     font-weight: bold;
+}
+
+.invite-add-btn{
+     border: 1px rgb(198, 198, 198) solid;
+     border-radius: 7px;
+     cursor: pointer;
+     margin-left: 10px;
+     margin-top: 11%;
+     font-size: 0.7rem;
+     padding: 1.2%;
+     background-color: white;
+     transition: all 0.5s;
+     height: fit-content;
+}
+
+.invite-add-btn:hover{
+     background-color: rgb(224, 224, 224);
+     transition: all 0.5s;
+}
+
+.schedule-confirmation-btn{
+     margin-top: 40px;
+     border: 1px black solid;
+     border-radius: 5px;
+     padding: 1.5%;
+     font-size: 1rem;
+     font-weight: bold;
+     background-color: rgb(130, 130, 227);
+     width: fit-content;
+     margin-left: auto;
+     margin-right: auto;
+     color: white;
+     cursor: pointer;
+     transition: all 0.5s;
+}
+
+.schedule-confirmation-btn:hover{
+     font-size: 1.2rem;
+     transition: all 0.5s;
+}
