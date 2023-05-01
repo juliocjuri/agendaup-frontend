@@ -19,9 +19,9 @@ class MySchedules extends Component {
      async fetchSchedules() {
           if (!localStorage.getItem('token')) alert("Redirect to login")
           else {
+               console.log("Get user scheudles")
                const res = await Api.getAllUserSchedules(localStorage.getItem('token')).then((result) => {
-
-                    console.log(result.data.schedules[0].date)
+                    console.log(result)
                     this.setState({
                          user: result.data.user
                     })
@@ -31,6 +31,7 @@ class MySchedules extends Component {
                          }))
                     }
                })
+               console.log('res'+ res);
                return res
           }
      }
@@ -38,6 +39,7 @@ class MySchedules extends Component {
      render() {
           return (
                <div className='container' onLoad={() => {
+                    console.log('load')
                     this.fetchSchedules()
                }}>
                     <Sidebar />

@@ -40,6 +40,7 @@ class Home extends Component {
 
      async fetchSchedules(){
           const res = await Api.getAllUserSchedules(localStorage.getItem('token')).then((result) => {
+               console.log(result)
                const name = result.data.name.split(' ', 1);
                this.setState({
                     currentUser: name
