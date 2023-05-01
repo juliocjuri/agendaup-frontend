@@ -81,7 +81,7 @@ class Sidebar extends Component {
                          </button>
                          <header className='header-wrapper'>
                               <img
-                                   src='/src/assets/logo-check-sign.png'
+                                   src='/assets/logo-check-sign.png'
                                    alt='logo'
                                    className='logo-check-sign'
                                    rotate={this.state.rotate.toString()}

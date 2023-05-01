@@ -36,7 +36,7 @@ class Register extends Component {
                     {this.state.navigateTo}
                     <div className='login-wrapper'>
                          <header className='login-header'>
-                              <img src='/src/assets/logo.png' className='logo' />
+                              <img src='/assets/logo.png' className='logo' />
                               <div className='login-title'>
                                    Crie sua conta
                               </div>
